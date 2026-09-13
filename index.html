@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SanzX — Embedded Systems &amp; Firmware Engineer</title>
+<meta name="description" content="Portfolio of a self-taught embedded systems and firmware engineer — the Accretion Journey from G-BOX to the Accretion Phone." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="board-texture" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="#top" class="chip-mark">SX<span>&#9679;</span>01</a>
+  <nav class="pinlinks">
+    <a href="#about">about</a>
+    <a href="#journey">journey</a>
+    <a href="#stack">stack</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-traces" viewBox="0 0 960 420" preserveAspectRatio="none" aria-hidden="true">
+      <path class="trace" d="M0,80 H260 Q280,80 280,100 V180" />
+      <path class="trace" d="M960,140 H700 Q680,140 680,160 V240" />
+      <path class="trace" d="M0,340 H180 Q200,340 200,320 V240" />
+      <path class="trace" d="M960,320 H760 Q740,320 740,300 V220" />
+      <circle class="pad" cx="280" cy="180" r="5" />
+      <circle class="pad" cx="680" cy="240" r="5" />
+      <circle class="pad" cx="200" cy="240" r="5" />
+      <circle class="pad" cx="740" cy="220" r="5" />
+    </svg>
+
+    <div class="chip">
+      <div class="chip-pins chip-pins--left" aria-hidden="true"></div>
+      <div class="chip-pins chip-pins--right" aria-hidden="true"></div>
+      <div class="chip-notch" aria-hidden="true"></div>
+
+      <p class="eyebrow-tag">U1 &middot; HIGH SCHOOL / SELF-TAUGHT</p>
+      <h1>SanzX</h1>
+      <p class="hero-role">Embedded Systems &amp; Firmware Engineer</p>
+      <p class="hero-line">Self-taught. Bare-metal minded.<br>Building silicon dreams one interrupt at a time.</p>
+
+      <div class="hero-tags">
+        <span>ESP32</span>
+        <span>C / C++</span>
+        <span>FreeRTOS</span>
+        <span>Edge AI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="pad-tag">01</span>
+      <h2>About</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I'm a high school student who fell in love with the space between hardware and software — the place where a single misplaced <code>volatile</code> keyword can crash a whole system, and where a well-placed DMA transfer can make a $3 microcontroller feel like magic.</p>
+        <p>Everything here is self-taught: no bootcamp, no formal curriculum — just datasheets, forum threads at 2&nbsp;AM, and a lot of bricked boards along the way.</p>
+        <p>Next chapter: continuing my studies at <strong>PENS (Politeknik Elektronika Negeri Surabaya)</strong>, to turn this self-taught foundation into formal, rigorous expertise.</p>
+      </div>
+
+      <table class="spec-table">
+        <caption>Parametric overview</caption>
+        <tbody>
+          <tr><th>Core focus</th><td>Embedded systems / firmware / IoT</td></tr>
+          <tr><th>Hardware optimization</th><td>OPI PSRAM tuning, bare-metal programming</td></tr>
+          <tr><th>Concurrency model</th><td>FreeRTOS, dual-core task scheduling</td></tr>
+          <tr><th>ML approach</th><td>On-device inference &amp; on-device learning</td></tr>
+          <tr><th>Target institution</th><td>PENS &mdash; Surabaya</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey" class="section">
+    <div class="section-head">
+      <span class="pad-tag">02</span>
+      <h2>The Accretion Journey</h2>
+    </div>
+    <p class="section-intro">Like a planet forming from dust and debris colliding over millions of years, every board below accreted onto the skills of the last. Nothing here was built in isolation.</p>
+
+    <ol class="timeline">
+
+      <li class="tl-item">
+        <div class="tl-pad">1</div>
+        <div class="tl-card">
+          <p class="tl-designator">U1 &middot; THE GENESIS</p>
+          <h3>G-BOX</h3>
+          <p class="tl-platform">ESP32 &middot; OLED 128&times;64 SSD1306 (I2C)</p>
+          <p>My first custom handheld console. Pure fundamentals: a real game loop from scratch, manual pixel rendering to a monochrome buffer, array-based memory management, and trigonometry (sin/cos) to make 2D physics feel right.</p>
+          <p class="tl-detail">Shipped: Flappy Bird &middot; Space Invaders &middot; Asteroids</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-pad">2</div>
+        <div class="tl-card">
+          <p class="tl-designator">U2 &middot; FIRST NETWORK</p>
+          <h3>ESP32-C3 Ultra Edition / AI-Pocket v1.0</h3>
+          <p class="tl-platform">ESP32-C3 SuperMini &middot; OLED 128&times;64</p>
+          <p>First real dive into the internet and power efficiency. A "Battery Guardian" built on a physical voltage-divider circuit, a custom 6-button virtual keyboard wired to Google Gemini&nbsp;2.0&nbsp;Flash, and an internet-free radio system over ESP-NOW Mesh Networking.</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-pad">3</div>
+        <div class="tl-card">
+          <p class="tl-designator">U3 &middot; COLOR &amp; DATA</p>
+          <h3>ESP32-S3 Media Hub v9.1</h3>
+          <p class="tl-platform">ESP32-S3 N16R8 &middot; TFT ST7789 (320&times;170)</p>
+          <p>Leveling up to color displays and real web data. <code>.mjpeg</code> playback via DMA using LovyanGFX &amp; JPEGDEC, live API integrations (ISS Tracker, NASA APOD, Groq AI), and BFS pathfinding for enemy AI in Pacman &amp; Tank Battle.</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-pad">4</div>
+        <div class="tl-card">
+          <p class="tl-designator">U4 &middot; VISION &amp; STABILITY</p>
+          <h3>SANZXCAM v6.1</h3>
+          <p class="tl-platform">ESP32-S3 &middot; 16-bit DVP Camera &middot; MPU6050 &middot; ILI9341</p>
+          <p>A terminal-aesthetic camera. Kalman-filtered sensor fusion for electronic image stabilization, HDR triple capture, a sprite-restored Dynamic Island UI, on-device analysis via Gemini&nbsp;2.5&nbsp;Flash&nbsp;Lite, and working steganography &mdash; payloads hidden in a JPEG's COM marker and a BMP's LSB bits.</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-pad">5</div>
+        <div class="tl-card">
+          <p class="tl-designator">U5 &middot; EDGE MACHINE LEARNING</p>
+          <h3>RYNE Engine &mdash; Bluetooth Music Player v1.4.0</h3>
+          <p class="tl-platform">ESP32-WROVER &middot; OLED SSD1306 &middot; Bluetooth A2DP</p>
+          <p>A Softmax multiclass "vibe classifier" that retrains itself every 5 minutes in PSRAM, a custom Bayesian recommendation model (RYNE-CRS) with power-law curiosity, and expressive OLED face animations synced to a dedicated FreeRTOS core watching the audio buffer.</p>
+        </div>
+      </li>
+
+      <li class="tl-item tl-item--final">
+        <div class="tl-pad">6</div>
+        <div class="tl-card tl-card--final">
+          <p class="tl-designator">U6 &middot; THE MASTERPIECE</p>
+          <h3>Accretion Phone &mdash; running nyx OS v84</h3>
+          <p class="tl-platform">ESP32-S3 &middot; ILI9341 resistive touch &middot; MPU6050 &middot; SD (SDIO 1-bit)</p>
+          <p>The culmination of everything above: a custom smartphone built from scratch on bare Arduino framework, 13,000+ lines of code, zero real OS underneath. Glassmorphism lock screen, momentum-scrolling home screen with zero-flicker double buffering in PSRAM, 26 built-in apps, Gemini voice dictation via a hand-written JSON parser, OTA updates, and a Game Mode running <em>Inferno</em> &mdash; a 3D raycasting FPS holding a stable 16&nbsp;FPS with persistent autosave.</p>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section">
+    <div class="section-head">
+      <span class="pad-tag">03</span>
+      <h2>Tech stack</h2>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h4>Languages</h4>
+        <div class="ic-row">
+          <span class="ic">C++</span><span class="ic">C</span><span class="ic">Python</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Frameworks &amp; libraries</h4>
+        <div class="ic-row">
+          <span class="ic">Arduino Core</span><span class="ic">FreeRTOS</span><span class="ic">LovyanGFX</span><span class="ic">JPEGDEC</span><span class="ic">ArduinoJson</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Hardware</h4>
+        <div class="ic-row">
+          <span class="ic">ESP32 / C3 / S3 / WROVER</span><span class="ic">SSD1306</span><span class="ic">ST7789</span><span class="ic">ILI9341</span><span class="ic">MPU6050</span><span class="ic">INMP441</span><span class="ic">OPI PSRAM</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Services &amp; tools</h4>
+        <div class="ic-row">
+          <span class="ic">Gemini API</span><span class="ic">Groq API</span><span class="ic">ESP-NOW</span><span class="ic">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="section-head">
+      <span class="pad-tag">04</span>
+      <h2>Contact</h2>
+    </div>
+
+    <blockquote class="closing-quote">
+      Mastery isn't a single breakthrough &mdash; it's accretion. Ten thousand small, unglamorous hours of debugging, rewiring, and rewriting, quietly fusing together until one day the dust becomes a planet.
+    </blockquote>
+
+    <div class="testpoints">
+      <a class="testpoint" href="https://github.com/silentproject2025" target="_blank" rel="noopener">
+        <span class="tp-label">TP1</span>
+        <span class="tp-name">GitHub</span>
+      </a>
+      <a class="testpoint" href="https://instagram.com/sanzx_project.id" target="_blank" rel="noopener">
+        <span class="tp-label">TP2</span>
+        <span class="tp-name">@sanzx_project.id</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> SanzX &mdash; built with C++, FreeRTOS, and too little sleep.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
